@@ -2,6 +2,7 @@ import React from 'react'
 import Header from "./components/Header";
 import './App.css'
 import Footer from "./components/Footer";
+import ProductRegistration from "./components/ProductRegistration";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <h1>Welcome to SmartHub</h1>
         <p>Your product support center</p>
         <button>Register Product</button>
+        <ProductRegistration />
       </main>
 
       <Footer companyName="SmartHub" />
