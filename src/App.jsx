@@ -1,17 +1,22 @@
 import React from 'react'
 import Header from "./components/Header";
 import './App.css'
-function App(){
+import Footer from "./components/Footer";
+
+function App() {
   return (
-    <div>
-      <Header title="Smarthub customer care" />
-      <h1>Welcome to smarthub</h1>
-      <p> your product support center</p>
-      <button>Register product</button>
+    <div className="app-container">
+      <Header title="SmartHub Customer Care" />
+
+      <main className="main-content">
+        <h1>Welcome to SmartHub</h1>
+        <p>Your product support center</p>
+        <button>Register Product</button>
+      </main>
+
+      <Footer companyName="SmartHub" />
     </div>
-    
   );
 }
 
-
-export default App
+export default App;
