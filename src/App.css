@@ -1,141 +1,21 @@
-
-/* ===== GLOBAL APP LAYOUT ===== */
-
-#root {
-  width: 100%;
-  min-height: 100vh;
-}
-
-.app-container {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-.main-content {
-  flex: 1;
-  padding: 40px 24px;
-  text-align: center;
-}
-
-/* ===== HEADER ===== */
-
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 20px;
   padding: 20px;
   background-color: #f5f5f5;
-  flex-wrap: wrap;
-  box-sizing: border-box;
 }
 
-header h2 {
-  margin: 0;
-}
-
-header nav {
+nav {
   display: flex;
   gap: 20px;
-  flex-wrap: wrap;
 }
 
-header nav a {
-  color: #111111;
+nav a {
+  color: #111;
   text-decoration: none;
-  font-weight: bold;
 }
 
-header nav a:hover {
-  color: #1428a0;
-}
-
-/* ===== FOOTER ===== */
-
-.site-footer {
-  width: 100%;
-  box-sizing: border-box;
-  background-color: #172033;
-  color: #ffffff;
-  padding: 32px 24px 16px;
-  margin-top: auto;
-}
-
-.footer-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 24px;
-  flex-wrap: wrap;
-}
-
-.footer-brand h2 {
-  margin: 0 0 8px;
-  color: #ffffff;
-  font-size: 24px;
-}
-
-.footer-brand p {
-  margin: 0;
-  color: #d1d5db;
-  font-size: 14px;
-}
-
-.footer-links {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.footer-links a {
-  color: #ffffff;
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 14px;
-}
-
-.footer-links a:hover {
-  color: #93c5fd;
-  text-decoration: underline;
-}
-
-.footer-copyright {
-  margin-top: 28px;
-  padding-top: 16px;
-  border-top: 1px solid #4b5563;
-  color: #d1d5db;
-  text-align: center;
-  font-size: 13px;
-}
-
-/* ===== RESPONSIVE DESIGN ===== */
-
-@media (max-width: 600px) {
-  header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  header nav {
-    flex-direction: column;
-    gap: 12px;
-  }
-
-  .main-content {
-    padding: 24px 16px;
-  }
-
-  .site-footer {
-    padding: 24px 16px 16px;
-  }
-
-  .footer-content {
-    flex-direction: column;
-  }
-
-  .footer-links {
-    flex-direction: column;
-    gap: 12px;
-  }
+.support-button:hover {
+  background-color: #0d1b70;
 }
