@@ -8,6 +8,14 @@ function ProductRegistration() {
   const [message, setMessage] = useState("");
   const [isSuccess, setIsSuccess] = useState(false);
 
+  function handleReset() {
+  setModelNumber("");
+  setSerialNumber("");
+  setPurchaseDate("");
+  setMessage("");
+  setIsSuccess(false);
+}
+
   function handleSubmit(event) {
     event.preventDefault();
 
@@ -86,6 +94,9 @@ function ProductRegistration() {
 
         <button type="submit">
           Register Product
+        </button>
+        <button type="button" onClick={handleReset}>
+         Reset
         </button>
       </form>
 
