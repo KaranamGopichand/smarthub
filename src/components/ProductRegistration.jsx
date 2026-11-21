@@ -8,13 +8,13 @@ function ProductRegistration() {
   const [message, setMessage] = useState("");
   const [isSuccess, setIsSuccess] = useState(false);
 
-  function handleReset() {
+  const handleReset = () => {
   setModelNumber("");
   setSerialNumber("");
   setPurchaseDate("");
   setMessage("");
   setIsSuccess(false);
-}
+};
 
   function handleSubmit(event) {
     event.preventDefault();

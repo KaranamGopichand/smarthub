@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import './App.css'
 import Footer from "./components/Footer";
 import ProductRegistration from "./components/ProductRegistration";
+import ProductList from "./ProductList";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <p>Your product support center</p>
         <button>Register Product</button>
         <ProductRegistration />
+       <ProductList title="My Registered Products" />
       </main>
 
       <Footer companyName="SmartHub" />
